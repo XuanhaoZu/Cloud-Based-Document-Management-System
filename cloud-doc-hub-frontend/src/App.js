@@ -4,10 +4,10 @@ import UploadForm from './components/UploadForm';
 import DocumentList from './components/DocumentList';
 
 function App() {
-  const [documents, setDocuments] = useState([]);
+  const [updateList, setUpdateList] = useState(false);
 
-  const addDocument = (newDocument) => {
-    setDocuments([...documents, newDocument]);
+  const handleUploadComplete = () => {
+    setUpdateList(!updateList); // 切换状态以触发文档列表的更新
   };
 
   return (
@@ -15,8 +15,8 @@ function App() {
       <header className="App-header">
         <h1>CloudDocHub</h1>
       </header>
-      <UploadForm onAddDocument={addDocument} />
-      <DocumentList documents={documents} />
+      <UploadForm onUploadComplete={handleUploadComplete} />
+      <DocumentList key={updateList} />
     </div>
   );
 }
