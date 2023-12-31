@@ -9,20 +9,18 @@ This Document Management System is a web-based application designed to allow use
 - **Document Upload**: Users can upload documents to the cloud.
 - **Document Listing**: View a list of all uploaded documents.
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - Node.js and npm
 - Python 3.x
 - AWS CLI configured with your AWS account
 - An AWS S3 bucket for document storage
 
-### Usage
+## Usage
 - Uploading Documents: Click the upload button and select a document to upload.
 - Viewing Documents: Uploaded documents will appear in the document list.
 
-### Built With
+## Built With
 - ReactJS - Frontend Framework
 - Python - Backend Scripting
 - AWS Lambda - Serverless Computing
